@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&family=Kalam:wght@400;700&display=swap");
+
+.all {
+  display: none;
+}
+
+.jumbotron {
+  background-image: url("../img/banner1.jpg");
+  transition: 1s;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 650px;
+}
+
+.jumbotron:hover {
+  background-image: url("../img/banner1\(crop1\).jpg.png");
+  transition: 1s;
+}
+
+.odd {
+  background-color: rgb(82, 228, 208);
+}
+
+.letter-words {
+  background-color: rgb(225, 248, 238);
+  font-family: "Kalam", cursive;
+  padding: 3px;
+}
+
+.all-container {
+  background-color: rgb(225, 248, 238);
+}
+
+hr {
+  width: 300px;
+  border-color: rgb(60, 182, 166);
+}
+
+.title {
+  transition: 1s;
+  display: inline-block;
+  margin-top: 80px;
+  margin-left: 100px;
+  font-weight: 900;
+  font-size: larger;
+  font-family: "Amatic SC", cursive;
+  color: rgb(82, 228, 208);
+}
+
+.title h1,
+.title p {
+  text-shadow: 1px 2px 5px rgb(10, 48, 63);
+}
+
+.title p {
+  font-family: "Kalam", cursive;
+}
+
+.navbar {
+  transition: 1.5s;
+  font-family: "Amatic SC", cursive;
+}
+
+.bg-custom {
+  transition: 1.5s;
+  background-color: rgb(220, 255, 250);
+  color: rgb(69, 71, 73);
+}
+
+.body {
+  font-family: "Kalam", cursive;
+  color: rgb(69, 71, 73);
+}
+
+.header {
+  transition: 1s;
+  height: 100px;
+  width: 100%;
+  font-family: "Amatic SC", cursive;
+  color: rgb(69, 71, 73);
+}
+
+.subheader {
+  font-family: "Amatic SC", cursive;
+  color: rgb(69, 71, 73);
+}
+
+.header:hover {
+  transition: 1s;
+  text-shadow: 0 0 5px rgb(150, 149, 139);
+}
+
+.title:hover {
+  text-shadow: 0px 0px 4px white;
+  transition: 1s;
+  color: rgb(49, 173, 167);
+  color: rgb(82, 197, 191);
+  color: rgb(141, 228, 223);
+  color: rgb(255, 255, 255);
+}
+
+.letter-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.description {
+  transform: translate(0, -2);
+  opacity: 0
+}
+
+.description.show {
+  transition: 1s;
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.letter {
+  width: 130px;
+  height: 100px;
+  background-image: radial-gradient(rgba(49, 173, 167, 1),
+      rgba(82, 197, 191, 1),
+      rgba(141, 228, 223, 1),
+      rgb(187, 253, 250));
+}
+
+.letter img {
+  width: 120px;
+  height: 80px;
+}
+
+.card img {
+  height: 200px;
+  width: 200px;
+}
+
+.card #cardBody1 {
+  display: none;
+}
+
+.friend-photo {
+  height: 64px;
+  width: 64px;
+  border: 3px red;
+}
+
+.choose-shadow {
+  box-shadow: 0 3px 5px 3px rgb(10, 48, 63);
+}
+
+.friend-message {
+  width: 600px;
+}
+
+audio {
+  transition: 1s;
+  filter: opacity(0%);
+}
+
+video {
+  transition: 1s;
+  filter: opacity(0%);
+}
+
+.play {
+  transition: 1s;
+  filter: opacity(100%);
+}
+
+.photo-card {
+  /* display: none; */
+  transform: translate(0, -20px);
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 5px;
+  margin: 3px 0;
+}
+
+.photo-card.show {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.photo-card:hover {
+  transition: 0.5s;
+  background-color: rgb(225, 248, 238);
+  box-shadow: 0 0 10px 5px rgb(20, 63, 61);
+}
+
+.highlight {
+  background-color: rgb(225, 248, 238);
+}
+
+.photo-box {
+  width: 100px;
+  height: 100px;
+  margin: 4px;
+}
+
+.caption-box {
+  width: 160px;
+  display: none;
+  font-family: "Kalam", cursive;
+  font-size: smaller;
+}
+
+.caption-box-header {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  font-weight: bolder;
+}
+
+
+.wish-name {
+  font-family: "Kalam", cursive;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.wishes {
+  transition: 0.5s;
+  border-radius: 5px;
+  opacity: 0;
+  transform: translate(0, 3);
+}
+
+.wishes.show {
+  transition: 1s;
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.wishes:hover {
+  transition: 1s;
+  box-shadow: 0 0 10px 1px rgb(10, 48, 63);
+  background-color: rgb(243, 246, 247);
+}
+
+
+#bg-music {
+  display: none;
+}
