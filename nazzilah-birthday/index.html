@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-    <button id="open" class="btn btn-primary">Buka Hadiahmu?</button>
+<body class="pastel-theme">
+    <!-- <button id="open" class="btn btn-primary">Buka Hadiahmu?</button> -->
     <div class="all">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -24,6 +24,16 @@
                     <a class="nav-item nav-link scroll-page" href="#description">Birthday-Girl</a>
                     <a class="nav-item nav-link scroll-page" href="#photoMessage">My Gallery</a>
                     <a class="nav-item nav-link scroll-page" href="#friend-wish">Poeple Wish</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ganti Tema
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#pastel" id="pastel-theme">Pastel</a>
+                            <a class="dropdown-item" href="#dark" id="dark-theme">Dark</a>
+                        </div>
+                    </li>
                 </div>
             </div>
         </nav>
@@ -46,7 +56,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="body col-6 p-5" style="line-height: 30px;">
+                <div class="body col-md-6 p-5" style="line-height: 30px;">
                     <div class="description">
                         Pada hari ini, 12 April 20 tahun yang lalu, telah lahir seorang gadis cantik ke dunia ini,
                         Nazzilah
@@ -60,11 +70,7 @@
                         Memberikan
                         arti dalam keikhlasan. Memberikan makna terhadap kesabaran. Menghias lebih banyak cinta dan
                         persahabatan.
-                    </div>
-                    <div class>
                         <h1 class="text-center header">Selamat ulang tahun yang ke-20 na...</h1>
-                    </div>
-                    <div class="">
                         Gimana ya menggambarkan dia? Hmmm mungkin beberapa keyword ini dapat mendeskripsikan dia :
                         <hr>
                         Seblak, lilis, Soda gembira, pantai ora, rumah pohon, sepeda gunung, praktikum, nanduy, jatoh,
@@ -72,15 +78,14 @@
                         ilalam, sendal di jok, eun-hyuk, dirigen, choco dll
                         <hr>
                     </div>
+
                 </div>
-                <div class="col-6 text-center align-items-center d-flex flex-wrap justify-content-around">
+                <div class="col-md-6 text-center align-items-center flex-column">
                     <h1 class="header">Check your letter, Na!</h1>
-                    <div class="break"></div>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong"
-                        class="letter rounded-sm align-items-center justify-content-around d-flex ">
+
+                    <div data-toggle="modal" data-target="#exampleModalLong" class="letter">
                         <img src="assets/vendor/freepik/letter.jpg" alt="">
-                    </button>
+                    </div>
 
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
@@ -190,7 +195,7 @@
             </div>
             <div class="row odd p-5">
                 <div class="container">
-                    <div class="row d-flex justify-content-between align-items-center">
+                    <div class="row justify-content-center align-items-center flex-wrap">
                         <div class="photo-card">
                             <img src="assets/img/photo-message/random/na1.jpg" alt="" class="photo-box shadow">
                             <div class="caption-box text-center">
@@ -229,8 +234,6 @@
                                 tangan kemana ya ?? wkwkwk
                             </div>
                         </div>
-                    </div>
-                    <div class="row d-flex justify-content-around align-items-center">
                         <div class="photo-card">
                             <img src="assets/img/photo-message/random/na6.jpg" alt="" class="photo-box shadow">
                             <div class="caption-box text-center">
@@ -262,8 +265,6 @@
                                 sebenernya ya kamu tuh, gak papa lah yang penting bunganya bagus
                             </div>
                         </div>
-                    </div>
-                    <div class="row d-flex justify-content-between align-items-center">
                         <div class="photo-card">
                             <img src="assets/img/photo-message/random/na10.jpg" alt="" class="photo-box shadow">
                             <div class="caption-box text-center">
@@ -302,8 +303,6 @@
                                 Ahh gak tau lagi, terlalu banyak salting pas aku ngedit caption ini
                             </div>
                         </div>
-                    </div>
-                    <div class="row d-flex justify-content-around align-items-center">
                         <div class="photo-card">
                             <img src="assets/img/photo-message/random/na15.jpg" alt="" class="photo-box shadow">
                             <div class="caption-box text-center">
@@ -342,8 +341,6 @@
                                 seorang dirigen
                             </div>
                         </div>
-                    </div>
-                    <div class="row d-flex justify-content-between align-items-center">
                         <div class="photo-card">
                             <img src="assets/img/photo-message/random/na19.jpg" alt="" class="photo-box shadow">
                             <div class="caption-box text-center">
@@ -384,8 +381,6 @@
                                 Iyah, bunga nya bagus. Orangnya apalagi :)))
                             </div>
                         </div>
-                    </div>
-                    <div class="row d-flex justify-content-around align-items-center">
                         <div class="photo-card">
                             <img src="assets/img/photo-message/random/na24.jpg" alt="" class="photo-box shadow">
                             <div class="caption-box text-center">
@@ -441,7 +436,7 @@
                     </div>
                 </div>
 
-
+                <hr>
                 <!-- Carousel -->
                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -501,7 +496,7 @@
                 </div>
             </div>
             <div class="row">
-                <div style="width:50%">
+                <div class="col-md-6">
                     <!-- ALDO -->
                     <div class="d-flex justify-content-center align-items-center flex-wrap wishes">
                         <p class="wish-name lead">Diofaldo Daffa Ardhana</p>
@@ -559,8 +554,7 @@
                         </audio>
                     </div>
                 </div>
-
-                <div style="width:50%;">
+                <div class="col-md-6">
                     <!-- JIHAN -->
                     <div class="d-flex justify-content-center align-items-center flex-wrap wishes">
                         <p class="wish-name lead">Syifa Jihan R.</p>
@@ -619,7 +613,7 @@
             </div>
             <hr>
             <div class="row">
-                <div class="" style="width:50%;">
+                <div class="col-md-6">
                     <!-- SAE -->
                     <div class="d-flex justify-content-center align-items-center flex-wrap wishes p-5">
                         <p class="wish-name lead">Saefurrohman</p>
@@ -659,7 +653,7 @@
                     </div>
                 </div>
 
-                <div class="" style="width:50%;">
+                <div class="col-md-6">
                     <!-- FIKRI -->
                     <div class="d-flex justify-content-center align-items-center flex-wrap wishes p-5">
                         <p class="wish-name lead">FIkri Septrian Anggara</p>
@@ -704,6 +698,7 @@
                     </div>
                 </div>
             </div>
+            <hr>
             <div class="row d-flex justify-content-center">
                 <div class="d-flex flex-wrap justify-content-center align-items-center wishes p-5">
                     <p class="wish-name lead">Salsabila Azmi</p>
@@ -715,14 +710,16 @@
                     <div class="break"></div>
                     <video controls id="caca-video" width="150px">
                         <source src="assets/video/Caca.mp4" type="video/mp4">
-                        Browser anda tidak dapat emnampilkan video, silakan ganti browser anda
+                        Browser anda tidak dapat menampilkan video, silakan ganti browser anda
                     </video>
                     <div class="break"></div>
                 </div>
             </div>
             <div class="row odd d-flex align-items-center justify-content-center">
                 <div class="p-4" style="font-family: 'Kalam', cursive;">
-                    Web Development by @langlangps in 2020
+                    Nazzilah-Birthday v1.2
+                    <br>
+                    Copyright &copy;2020 by langlangps
                 </div>
             </div>
             <audio src="assets/sound/with-you2.mp3" autoplay controls loop class="play" id="bg-music"></audio>
@@ -737,7 +734,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-
     <script src="assets/js/script.js"></script>
 </body>
 

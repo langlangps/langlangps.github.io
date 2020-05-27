@@ -1,60 +1,56 @@
 $(document).ready(function () {
-  var bgMusic = document.querySelector('#bg-music');
-  $('#open').click(function () {
-    $('.all').fadeIn("slow");
-    $(this).hide();
-    bgMusic.play();
-  })
+  var bgMusic = document.querySelector("#bg-music");
+
+  // Membuka document agar musik dapat berjalan otomatis
+  // $('#open').click(function () {
+  //   $('.all').fadeIn("slow");
+  //   $(this).hide();
+  //   bgMusic.play();
+  // })
+
   // Efek Parralax Jumbotron
   $(window).scroll(function () {
     var scrollTop = $(this).scrollTop();
     // $('.jumbotron .title').css("margin-top", (0.6 * scrollTop) + "px");
-
-    if (scrollTop > $('#description').offset().top - 100) {
-      $('.navbar').addClass('bg-custom');
-      $('.navbar').addClass('shadow');
-    } else {
-      $('.navbar').removeClass('bg-custom');
-      $('.navbar').removeClass('shadow');
+    if ($("body").hasClass("pastel-theme")) {
+      if (scrollTop > $("#description").offset().top - 100) {
+        $(".navbar").addClass("bg-pastel");
+        $(".navbar").addClass("shadow");
+      } else {
+        $(".navbar").removeClass("bg-pastel");
+        $(".navbar").removeClass("shadow");
+      }
     }
 
-    if (scrollTop > ($('#photoMessage').offset().top - 120)) {
-      $('.photo-card').each(function (index) {
+    if (scrollTop > $("#photoMessage").offset().top - 120) {
+      $(".photo-card").each(function (index) {
         setTimeout(function () {
-          $('.photo-card').eq(index).addClass('show');
+          $(".photo-card").eq(index).addClass("show");
         }, 200 * (index + 1));
       });
     } else {
-      var total = $('.photo-card').length - 1;
-      $('.photo-card').each(function (index) {
+      var total = $(".photo-card").length - 1;
+      $(".photo-card").each(function (index) {
         setTimeout(function () {
-          $('.photo-card').eq(total - index).removeClass('show');
+          $(".photo-card")
+            .eq(total - index)
+            .removeClass("show");
         }, 500);
       });
     }
 
-    if (scrollTop > ($('#description').offset().top - 150)) {
-      $('.description').addClass('show');
+    if (scrollTop > $("#description").offset().top - 150) {
+      $(".description").addClass("show");
     } else {
-      $('.description').removeClass('show');
+      $(".description").removeClass("show");
     }
 
-    if (scrollTop > ($('#friend-wish').offset().top - 100)) {
-      $('.wishes').addClass('show');
+    if (scrollTop > $("#friend-wish").offset().top - 100) {
+      $(".wishes").addClass("show");
     } else {
-      $('.wishes').removeClass('show');
+      $(".wishes").removeClass("show");
     }
-
   });
-
-  document.querySelector(".body").addEventListener("mouseenter", function () {
-    this.classList.toggle("shadow");
-  });
-  document.querySelector(".body").addEventListener("mouseleave", function () {
-    this.classList.toggle("shadow");
-  });
-
-
 
   // Melakukan penyetelan audio untuk setiap tombol
   var previousAudio;
@@ -93,8 +89,9 @@ $(document).ready(function () {
     event.preventDefault();
     let dest = $(this).attr("href");
     let elementDest = $(dest);
-    $("html, body").animate({
-        scrollTop: elementDest.offset().top - 50
+    $("html, body").animate(
+      {
+        scrollTop: elementDest.offset().top - 50,
       },
       1000,
       "easeInOutExpo"
@@ -108,7 +105,8 @@ $(document).ready(function () {
       $(this)
         .siblings(".caption-box")
         .slideToggle("slow", function () {
-          $(this).siblings(".photo-box").animate({
+          $(this).siblings(".photo-box").animate(
+            {
               height: "100px",
               width: "100px",
             },
@@ -118,7 +116,8 @@ $(document).ready(function () {
         });
     } else {
       $(this).parent().addClass("highlight");
-      $(this).animate({
+      $(this).animate(
+        {
           height: "160px",
           width: "160px",
         },
@@ -133,7 +132,8 @@ $(document).ready(function () {
 
   // Membrikan efek untuk gambar di poeple-wish
   $(".btn-audio").mouseenter(function () {
-    $(this).animate({
+    $(this).animate(
+      {
         height: "92px",
         width: "92px",
       },
@@ -145,7 +145,8 @@ $(document).ready(function () {
   });
 
   $(".btn-audio").mouseleave(function () {
-    $(this).animate({
+    $(this).animate(
+      {
         height: "64px",
         width: "64px",
       },
@@ -157,7 +158,8 @@ $(document).ready(function () {
   });
 
   $(".btn-text").mouseenter(function () {
-    $(this).animate({
+    $(this).animate(
+      {
         height: "92px",
         width: "92px",
       },
@@ -168,7 +170,8 @@ $(document).ready(function () {
     );
   });
   $(".btn-text").mouseleave(function () {
-    $(this).animate({
+    $(this).animate(
+      {
         height: "64px",
         width: "64px",
       },
@@ -180,8 +183,27 @@ $(document).ready(function () {
   });
 
   // Validasi surat
-  $('.letter').click(function (e) {
+  $(".letter").click(function (e) {
     e.preventDefault();
-  })
-  // Efek muncul pada phooto-message
+  });
+
+  // Mengganti tema
+  // Dark
+  $("#dark-theme").click(function () {
+    // Mengubah warna navbar
+    $("body").addClass("dark-theme");
+    $("body").removeClass("pastel-theme");
+    // Mengubah navbar
+    $(".navbar").addClass("navbar-dark");
+    $(".navbar").removeClass("navbar-light");
+  });
+
+  $("#pastel-theme").click(function () {
+    // Mengubah warna navbar
+    $("body").addClass("pastel-theme");
+    $("body").removeClass("dark-theme");
+    // Mengubah navbar
+    $(".navbar").addClass("navbar-light");
+    $(".navbar").removeClass("navbar-dark");
+  });
 });

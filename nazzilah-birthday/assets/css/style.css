@@ -1,93 +1,106 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&family=Kalam:wght@400;700&display=swap");
 
-.all {
+/* .all {
   display: none;
-}
+} */
 
-.jumbotron {
-  background-image: url("../img/banner1.jpg");
-  transition: 1s;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 650px;
-}
 
-.jumbotron:hover {
-  background-image: url("../img/banner1\(crop1\).jpg.png");
-  transition: 1s;
-}
-
-.odd {
+.bg-pastel {
   background-color: rgb(82, 228, 208);
 }
 
-.letter-words {
-  background-color: rgb(225, 248, 238);
-  font-family: "Kalam", cursive;
-  padding: 3px;
-}
-
-.all-container {
-  background-color: rgb(225, 248, 238);
-}
-
-hr {
-  width: 300px;
-  border-color: rgb(60, 182, 166);
-}
-
-.title {
-  transition: 1s;
-  display: inline-block;
-  margin-top: 80px;
-  margin-left: 100px;
-  font-weight: 900;
-  font-size: larger;
-  font-family: "Amatic SC", cursive;
-  color: rgb(82, 228, 208);
-}
-
-.title h1,
-.title p {
-  text-shadow: 1px 2px 5px rgb(10, 48, 63);
-}
-
-.title p {
-  font-family: "Kalam", cursive;
-}
-
+/* Navbar */
 .navbar {
   transition: 1.5s;
   font-family: "Amatic SC", cursive;
 }
 
-.bg-custom {
-  transition: 1.5s;
-  background-color: rgb(220, 255, 250);
-  color: rgb(69, 71, 73);
+.dark-theme .navbar {
+  background-color: rgb(0, 0, 7);
+  color: white;
 }
 
-.body {
+/* Jumbotron secara keseluruhan */
+.jumbotron {
+  transition: 1s;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 700px;
+}
+
+.jumbotron:hover {
+  transition: 1s;
+}
+
+/* Jumbotron dengan tema pastel */
+.pastel-theme .jumbotron {
+  background-image: url("../img/banner1.jpg");
+}
+
+.pastel-theme .jumbotron:hover {
+  background-image: url("../img/banner1\(crop1\).jpg.png");
+}
+
+/* Jumbotron dengan tema dark */
+.dark-theme .jumbotron {
+  background-image: url("../img/banner2.jpg");
+}
+
+.dark-theme .jumbotron:hover {
+  background-image: url("../img/banner2.jpg");
+}
+
+/* Background pastel yang genap */
+.pastel-theme .odd {
+  background-color: rgb(82, 228, 208);
+}
+
+/* Background dark yang genap */
+.dark-theme .odd {
+  background-color: rgb(0, 0, 7);
+}
+
+/* all-container pastel */
+.pastel-theme .all-container {
+  background-color: rgb(225, 248, 238);
+}
+
+/* all-container dark*/
+.dark-theme .all-container {
+  background-color: rgb(41, 48, 62);
+}
+
+/* hr for pastel-theme */
+.pastel-theme hr {
+  width: 300px;
+  border-color: rgb(60, 182, 166);
+}
+
+/* hr for dark-theme */
+.dark-theme hr {
+  width: 300px;
+  border-color: rgb(219, 248, 244);
+}
+
+
+/* title */
+.title {
+  transition: 1s;
+  display: inline-block;
+  font-weight: 900;
+  font-size: larger;
+  font-family: "Amatic SC", cursive;
+}
+
+.title h1,
+.title p {
+  text-shadow: 1px 2px 5px rgb(10, 48, 63);
+  cursor: default;
+}
+
+.title p {
   font-family: "Kalam", cursive;
-  color: rgb(69, 71, 73);
-}
-
-.header {
-  transition: 1s;
-  height: 100px;
-  width: 100%;
-  font-family: "Amatic SC", cursive;
-  color: rgb(69, 71, 73);
-}
-
-.subheader {
-  font-family: "Amatic SC", cursive;
-  color: rgb(69, 71, 73);
-}
-
-.header:hover {
-  transition: 1s;
-  text-shadow: 0 0 5px rgb(150, 149, 139);
 }
 
 .title:hover {
@@ -99,11 +112,208 @@ hr {
   color: rgb(255, 255, 255);
 }
 
+/* title pastel */
+.pastel-theme .title {
+  color: rgb(82, 228, 208);
+  margin-top: 80px;
+  margin-left: 100px;
+}
+
+/* title dark */
+.dark-theme .title {
+  text-align: right;
+  color: rgb(0, 0, 7);
+  margin-top: 80px;
+  margin-right: 20px;
+}
+
+/* header */
+.header {
+  margin-top: 2rem;
+  transition: 1s;
+  width: 100%;
+  font-family: "Amatic SC", cursive;
+  cursor: default;
+}
+
+.header:hover {
+  transition: 1s;
+}
+
+.pastel-theme .header {
+  color: rgb(69, 71, 73);
+}
+
+.pastel-theme .header:hover {
+  text-shadow: 0 0 5px rgb(150, 149, 139);
+}
+
+.dark-theme .header {
+  color: rgb(219, 248, 244);
+}
+
+.dark-theme .header:hover {
+  text-shadow: 0 0 5px rgb(180, 255, 245);
+}
+
+.subheader {
+  font-family: "Amatic SC", cursive;
+  cursor: default;
+}
+
+.pastel-theme .subheader {
+  color: rgb(69, 71, 73);
+}
+
+.dark-theme .subheader {
+  color: rgb(219, 248, 244);
+}
+
+/* body content */
+.body {
+  font-family: "Kalam", cursive;
+}
+
+.pastel-theme .body {
+  color: rgb(69, 71, 73);
+}
+
+.dark-theme .body {
+  color: rgb(219, 248, 244);
+}
+
+/* letter */
+
+.letter {
+  cursor: pointer;
+  width: 100%;
+  height: 200px;
+}
+
+.letter img {
+  width: 500px;
+}
+
+.letter-words {
+  font-family: "Kalam", cursive;
+  padding: 3px;
+}
+
+.pastel-theme .letter-words {
+  background-color: rgb(225, 248, 238);
+}
+
+.dark-theme .letter-words {
+  color: rgb(41, 48, 62);
+  background-color: rgb(219, 248, 244);
+}
+
 .letter-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+/* Photo Box */
+.photo-card {
+  /* display: none; */
+  transform: translate(0, -20px);
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 5px;
+  margin: 0.8rem 1rem;
+}
+
+.photo-card.show {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.photo-card:hover {
+  transition: 0.5s;
+}
+
+.pastel-theme .photo-card:hover {
+  background-color: rgb(225, 248, 238);
+  box-shadow: 0 0 10px 5px rgb(20, 63, 61);
+}
+
+.dark-theme .photo-card:hover {
+  background-color: rgb(219, 248, 244);
+  box-shadow: 0 0 10px 5px rgb(20, 63, 61);
+}
+
+.pastel-theme .highlight {
+  background-color: rgb(225, 248, 238);
+}
+
+.dark-theme .highlight {
+  background-color: rgb(219, 248, 244);
+  color: rgb(25, 25, 41);
+}
+
+.photo-box {
+  width: 100px;
+  height: 100px;
+  margin: 4px;
+}
+
+.caption-box {
+  width: 160px;
+  display: none;
+  font-family: "Kalam", cursive;
+  font-size: smaller;
+}
+
+.caption-box-header {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  font-weight: bolder;
+}
+
+/* carousel */
+.carousel {
+  border-radius: 2rem;
+}
+
+/* friend-wish */
+.wishes {
+  transition: 0.5s;
+  border-radius: 5px;
+  opacity: 0;
+  transform: translate(0, 3);
+}
+
+.wish-name {
+  font-family: "Kalam", cursive;
+}
+
+.dark-theme .wishes {
+  color: rgb(219, 248, 244);
+}
+
+.wishes.show {
+  transition: 1s;
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.wishes:hover {
+  transition: 1s;
+}
+
+.pastel-theme .wishes:hover {
+  box-shadow: 0 0 10px 1px rgb(10, 48, 63);
+  background-color: rgb(243, 246, 247);
+}
+
+.dark-theme .wishes:hover {
+  box-shadow: 0 0 10px 1px rgb(10, 48, 63);
+  background-color: rgb(219, 248, 244);
+  color: rgb(0, 0, 7);
+}
+
 
 .description {
   transform: translate(0, -2);
@@ -114,15 +324,6 @@ hr {
   transition: 1s;
   transform: translate(0, 0);
   opacity: 1;
-}
-
-.letter {
-  width: 130px;
-  height: 100px;
-  background-image: radial-gradient(rgba(49, 173, 167, 1),
-      rgba(82, 197, 191, 1),
-      rgba(141, 228, 223, 1),
-      rgb(187, 253, 250));
 }
 
 .letter img {
@@ -168,77 +369,13 @@ video {
   filter: opacity(100%);
 }
 
-.photo-card {
-  /* display: none; */
-  transform: translate(0, -20px);
-  opacity: 0;
-  transition: 0.5s;
-  border-radius: 5px;
-  margin: 3px 0;
-}
-
-.photo-card.show {
-  transform: translate(0, 0);
-  opacity: 1;
-  transition: 0.5s;
-}
-
-.photo-card:hover {
-  transition: 0.5s;
-  background-color: rgb(225, 248, 238);
-  box-shadow: 0 0 10px 5px rgb(20, 63, 61);
-}
-
-.highlight {
-  background-color: rgb(225, 248, 238);
-}
-
-.photo-box {
-  width: 100px;
-  height: 100px;
-  margin: 4px;
-}
-
-.caption-box {
-  width: 160px;
-  display: none;
-  font-family: "Kalam", cursive;
-  font-size: smaller;
-}
-
-.caption-box-header {
-  font-family: "Amatic SC", cursive;
-  text-align: center;
-  font-weight: bolder;
-}
 
 
-.wish-name {
-  font-family: "Kalam", cursive;
-}
+
 
 .break {
   flex-basis: 100%;
   height: 0;
-}
-
-.wishes {
-  transition: 0.5s;
-  border-radius: 5px;
-  opacity: 0;
-  transform: translate(0, 3);
-}
-
-.wishes.show {
-  transition: 1s;
-  transform: translate(0, 0);
-  opacity: 1;
-}
-
-.wishes:hover {
-  transition: 1s;
-  box-shadow: 0 0 10px 1px rgb(10, 48, 63);
-  background-color: rgb(243, 246, 247);
 }
 
 
