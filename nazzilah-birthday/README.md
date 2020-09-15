@@ -1,2 +1,2 @@
 # birthday-girl
-Ini adalah web untuk gadis yang ulang tahun versi 1.0 (develop 12 April 2020)
+Ini adalah web untuk gadis yang ulang tahun versi 1.2 (develop 25 Mei 2020)
