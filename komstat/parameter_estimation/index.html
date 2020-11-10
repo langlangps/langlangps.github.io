@@ -414,18 +414,16 @@ summary {
 </div>
 
 
-<blockquote>
-<ul>
-<li>Nama = Tubagus Langlang Purwasasmita</li>
-<li>Kelas = 3SD1</li>
-<li>NIM = 221810634</li>
-<li>Kode = 1QKRO</li>
-</ul>
-</blockquote>
 <div id="estimasi-parameter" class="section level1">
 <h1>Estimasi Parameter</h1>
 <p>Pada pertemuan kali ini, kita akan membahas estimasi parameter statistik menggunakan R. Beberapa pokok bahasannya adalah</p>
-<p>1 Estimasi Rata-rata 1 Populasi * Varians Diketahui * Varians Tidak Diketahui</p>
+<p>1 Estimasi Rata-rata 1 Populasi</p>
+<p>
+  <ul>
+    <li>Varians Diketahui</li>
+    <li>Varians Tidak Diketahui</li>
+  </ul>
+</p>
 <p>2 Estimasi Proporsi</p>
 <p>3 Uji Proporsi</p>
 <p>4 Estimasi Beda Proporsi 2 Populasi</p>
@@ -623,7 +621,14 @@ estimate(n = 100, mean = samp_mean, sd = sqrt(samp_var), unknown.var = T)</code>
 <p>Diambil 10 buah sampel acak dari pengujian kecepatan bit dalam sebuah kanal komunikasi (bps) dengan nilai masing-masing: 142, 157, 138,175, 152, 149, 148, 200, 182, dan 164.<br />
 Dengan level keyakinan 95%, tentukan interval estimasi data-data tersebut.</p>
 </blockquote>
-<p>Dari soal diatas, * <strong>varians populasi tidak diketahui</strong>, * <strong>populasinya tidak terbatas</strong>, karena tidak diberitahu N nya * Distribusi yang tepat ialah <strong>distribusi t</strong> * <strong>tanpa faktor koreksi</strong></p>
+<p>Dari soal diatas, 
+  <ul>
+    <li><strong>varians populasi tidak diketahui</strong></li>
+    <li><strong>populasinya tidak terbatas</strong>, karena tidak diberitahu N nya</li>
+    <li>* Distribusi yang tepat ialah <strong>distribusi t</strong></li>
+    <li><strong>tanpa faktor koreksi</strong></li>
+  </ul>
+</p>
 <pre class="r"><code>x &lt;- c(142, 157, 138,175, 152, 149, 148, 200, 182, 164)
 
 estimate(x = x, unknown.var = T, finite = F)</code></pre>
@@ -923,7 +928,6 @@ Dengan level keyakinan 98% tentukan interval kepercayaan untuk mengestimasi prop
 </div>
 <div id="terima-kasih" class="section level2">
 <h2>Terima Kasih</h2>
-<p>Hasil R bisa dilihat di <a href="https://langlangps.github.com/komstat/parameter_estimation">github.io</a></p>
 </div>
 </div>
 
