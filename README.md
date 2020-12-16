@@ -27,8 +27,15 @@ Tampilan yang disajikan dalam bentuk Dashboard default dari package [```flexdash
 
 Sentiment Analisis terhadap komentar terhadap film dari IMDB. (Berdasarkan tutorial di [Tensorflow](https://www.tensorflow.org/tutorials/keras/classification)
 
+### [R - STIS Developer Mini Survey 2020](https://langlangps.github.io/ps-tools-analysis/r)
 
+Source code mengenanai analisis data survey developer sebagai tugas Nonpar. Beberapa hasil (visualisasi, data, form, dll) ada di [drive saya](htpps://s.id/ps-tools-survey).
+Isi dari source code ini lebih fokus ke analisis statistik menggunakan uji chi square
 
+### [Python - STIS Developer Mini Survey 2020](https://langlangps.github.io/ps-tools-analysis/python)
+
+Masih berkaitan dengan STIS Developer Mini Survey, source code ini berhubungan dengan data cleaning, preprocessing, preparing untuk dilakukan analisis
+Sekaligus beberapa visualisasi data yang menggambarkan data hasil survey ini. 
 
 
 Contact me at 
