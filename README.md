@@ -1,4 +1,5 @@
 # SELAMAT DATANG DI GITHUB SAYA
+*Halaman ini juga telah dipindahkan ke [Portfolio](http://langlangps.herokuapp.com/portfolio/)
 
 > Berikut adalah link menuju portfolio saya dalam bentuk **HTML**
 
